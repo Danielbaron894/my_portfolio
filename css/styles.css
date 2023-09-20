@@ -10155,16 +10155,27 @@ section.resume-section .resume-section-content {
   font-size: 50px;
 }
 
+.resume-section-content h1 {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  font-size: 90px;
+}
+
 @media (max-width: 501px) {
   .resume-section-content h1 {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    font-size: 90px;
+    font-size: 60px;
   }
   .resume-section-content h1 .typed{
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    font-size: 50px;
+    font-size: 35px;
+  }
+  .resume-section-content h1 .fstack{
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    font-size: 35px;
   }
 }
 
