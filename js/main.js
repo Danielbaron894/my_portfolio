@@ -62,31 +62,38 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let elementPos = select(el).offsetTop;
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth' 
-    });
+ * Scrolls to an element with header offset
+ */
+const scrollto = (el) => {
+  let elementPos = select(el).offsetTop;
+  window.scrollTo({
+    top: elementPos,
+    behavior: 'smooth'
+  });
+}
+
+/**
+ * Back to top button
+ */
+let backtotop = select('.back-to-top')
+if (backtotop) {
+  const toggleBacktotop = () => {
+    if (window.scrollY > 100) {
+      backtotop.classList.add('active')
+    } else {
+      backtotop.classList.remove('active')
+    }
   }
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
+  window.addEventListener('load', toggleBacktotop)
+  onscroll(document, toggleBacktotop)
+
+  // Add an event listener to the back to top button
+  backtotop.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    scrollto('body'); // Scroll to the top of the page smoothly
+  });
+}
 
   /**
    * Mobile nav toggle
