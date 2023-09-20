@@ -10146,6 +10146,14 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+@media (max-width: 501px) {
+  .resume-section-content h1 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    font-size: 90px;
+  }
+}
+
 .skill-title {
   font-size: 1rem;
 }
