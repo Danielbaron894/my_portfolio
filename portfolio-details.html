@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Daniel Bar-On - Full-Stack Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+      type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/portfolio.css" rel="stylesheet" />
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+  
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const readMoreButton = document.getElementById("read-more-button");
+  const shrunkText = document.querySelector(".shrunk-text");
+
+  let isExpanded = false;
+
+  readMoreButton.addEventListener("click", function () {
+    if (isExpanded) {
+      // If the content is expanded, hide it and change the button text
+      shrunkText.style.maxHeight = "300px"; // Adjust the height accordingly
+      readMoreButton.textContent = "Read More...";
+      readMoreButton.classList.remove("less");
+    } else {
+      // If the content is not expanded, show it and change the button text
+      shrunkText.style.maxHeight = "none";
+      readMoreButton.textContent = "Read Less";
+      readMoreButton.classList.add("less");
+    }
+
+    // Toggle the expanded state
+    isExpanded = !isExpanded;
+  });
+});
+</script>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+     
+
+       <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6R674N" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">
+          <span class="d-block d-lg-none">Daniel Bar-On</span>
+          <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                  src="assets/img/Daniel.jpg" alt="..." /></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+              class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html"><i class="bx bx-home icon"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="portfolio.html"><i class='bx bx-briefcase-alt-2 icon'></i> Portfolio</a></li>
+          </ul>
+      </div>
+  </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>Portfolio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/register.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/login.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/user_page.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/admin_page.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/edit_vacation.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/followers_report.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/delete_vacation.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web and Mobile App Development.</li>
+                <li><strong>Client</strong>: Personal project</li>
+                <li><strong>Project date</strong>: 14 September, 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://jb4.ivy.co.il/build">https://jb4.ivy.co.il/build</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Vacation Booking Platform</h2>
+              <p class="shrunk-text">
+              
+
+                Project Description:
+                
+                This project represents a comprehensive web-based vacation booking platform that integrates both web and mobile app components. It serves as a one-stop solution for users to discover, plan, and book vacations to various destinations. The platform combines the power of modern web technologies, server-side scripting, and cloud-based storage to deliver a seamless user experience.
+                
+                Key Features:
+                
+                User Authentication: The project features secure user authentication using Firebase Authentication, ensuring that user data remains protected.
+                
+                Vacation Listings: Users can explore a wide range of vacation packages listed on the platform. These listings provide details about the destination, description, duration, pricing, and images.
+                
+                Image Upload: An image upload functionality allows administrators to add attractive visuals for each vacation package.
+                
+                Favorite Vacations: Registered users can mark vacations as favorites, providing a personalized experience. This data is stored in a relational database for quick retrieval.
+                
+                Admin Panel: Administrators have access to an admin panel where they can add, edit, and delete vacation packages. They can also manage user accounts.
+                
+                Real-time Data: Firebase Firestore is used to store and manage vacation data, providing real-time updates to users as new vacations are added or existing ones are modified.
+                
+                Responsive Design: The platform is designed to be responsive, ensuring a consistent and visually appealing experience across various devices, including desktops, tablets, and mobile phones.
+                
+                File Storage: Firebase Storage is employed to store vacation images securely.
+                
+                User-Friendly Interface: The user interface is intuitive and user-friendly, making it easy for users to search for vacations based on their preferences.
+                
+                Middleware and Security: Middleware functions are used to secure certain routes, ensuring that only authorized users can access certain features. JWT (JSON Web Tokens) are used for authentication and authorization.
+                
+                RESTful API: The project features a RESTful API that facilitates data exchange between the front-end and back-end components.
+                
+                Technologies Used:
+                
+                Front-end: JavaScript, React.js, Redux, HTML/CSS, Axios for API requests.
+                
+                Back-end: Node.js, Express.js, MySQL for data storage, bcrypt for password hashing, and JWT for authentication.
+                
+                Database: MySQL for structured data storage and Firebase Firestore for real-time data updates.
+                
+                Cloud Services: Firebase for user authentication, Firebase Firestore for real-time data, Firebase Storage for image storage.
+                
+                Deployment: The project may be hosted on a cloud platform like Heroku, AWS, or others.
+                
+                This vacation booking platform demonstrates a strong understanding of full-stack web development and mobile app integration. It showcases the ability to create a secure, responsive, and user-centric application, making it an excellent addition to your portfolio for potential employers and clients in the web and mobile app development industry.              </p>
+            </div>
+          </div>
+
+          <button id="read-more-button" class="read-button">Read More...</button>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    </div>
+  </footer><!-- End  Footer -->
+
+      <!-- Bootstrap core JS-->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
