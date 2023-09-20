@@ -10165,7 +10165,7 @@ section.resume-section .resume-section-content {
   .resume-section-content h1 {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    font-size: 60px;
+    font-size: 80px;
   }
   .resume-section-content h1 .typed{
     flex-direction: column; /* Stack elements vertically */
