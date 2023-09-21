@@ -276,3 +276,23 @@ function scrollToTopSmoothly() {
   new PureCounter();
 
 })()
+
+
+// Get references to the elements
+const shrunkText = document.querySelector('.shrunk-text');
+const readMoreButton = document.getElementById('read-more-button');
+
+// Set a threshold for the text length at which to show/hide the button
+const textThreshold = 200; // Adjust as needed
+
+// Function to toggle the button based on text length
+function toggleReadMoreButton() {
+  if (shrunkText.textContent.length > textThreshold) {
+    readMoreButton.style.display = 'block';
+  } else {
+    readMoreButton.style.display = 'none';
+  }
+}
+
+// Initial check on page load
+toggleReadMoreButton();
