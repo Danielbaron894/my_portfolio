@@ -91,10 +91,23 @@ if (backtotop) {
   // Add an event listener to the back to top button
   backtotop.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default anchor behavior
-    scrollto('body'); // Scroll to the top of the page smoothly
+    scrollToTopSmoothly(); // Scroll to the top of the page smoothly
   });
 }
 
+// Function to smoothly scroll to the top of the page
+function scrollToTopSmoothly() {
+  const scrollDuration = 1000; // Duration of the scroll animation in milliseconds
+  const scrollStep = -window.scrollY / (scrollDuration / 15); // Calculate step size based on scroll duration
+
+  const scrollInterval = setInterval(() => {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
   /**
    * Mobile nav toggle
    */
