@@ -97,7 +97,7 @@ if (backtotop) {
 
 // Function to smoothly scroll to the top of the page
 function scrollToTopSmoothly() {
-  const scrollDuration = 750; // Duration of the scroll animation in milliseconds
+  const scrollDuration = 600; // Duration of the scroll animation in milliseconds
   const scrollStep = -window.scrollY / (scrollDuration / 15); // Calculate step size based on scroll duration
 
   const scrollInterval = setInterval(() => {
