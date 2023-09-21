@@ -10242,5 +10242,12 @@ section.resume-section .resume-section-content {
 
 }
 
+@media (max-width: 501px) {
+  .typed-cursor {
+    font-size: 45px; 
+    line-height: 12px;
+  }
+}
+
 
 
