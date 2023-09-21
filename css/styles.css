@@ -10236,5 +10236,11 @@ section.resume-section .resume-section-content {
   opacity: 1;
 }
 
+.typed-cursor {
+  font-size: 65px; 
+  line-height: 12px;
+
+}
+
 
 

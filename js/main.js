@@ -143,9 +143,10 @@ if (backtotop) {
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 120,
+      backSpeed: 60,
+      backDelay: 3000,
+      
     });
   }
 
