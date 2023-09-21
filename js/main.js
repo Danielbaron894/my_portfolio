@@ -72,17 +72,29 @@ const scrollto = (el) => {
   });
 }
 
-// Function to smoothly scroll to the top of the page with a slower scroll step
-const scrollToTopSlowly = () => {
-  const scrollStep = -window.scrollY / (1000 / 15); // Adjust the "500" for the scroll speed
-  const scrollInterval = setInterval(() => {
-    if (window.scrollY !== 0) {
-      window.scrollBy(0, scrollStep);
+/**
+ * Back to top button
+ */
+let backtotop = select('.back-to-top')
+if (backtotop) {
+  const toggleBacktotop = () => {
+    if (window.scrollY > 100) {
+      backtotop.classList.add('active')
     } else {
-      clearInterval(scrollInterval);
+      backtotop.classList.remove('active')
     }
-  }, 15);
-};
+  }
+
+  window.addEventListener('load', toggleBacktotop)
+  onscroll(document, toggleBacktotop)
+
+  // Add an event listener to the back to top button
+  backtotop.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    scrollto('body'); // Scroll to the top of the page smoothly
+  });
+}
+
   /**
    * Mobile nav toggle
    */
