@@ -127,6 +127,10 @@
     transition: 0.3s;
     width: 50%;
   }
+
+  #portfolio .row {
+    padding-left: 30px;
+  }
   
   .portfolio .portfolio-wrap .portfolio-links a:hover {
     background: #bd5d38;
