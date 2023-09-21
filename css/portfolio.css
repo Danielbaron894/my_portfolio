@@ -113,6 +113,11 @@
     display: flex;
     justify-content: center;
   }
+
+  .img-fluid {
+    width:370px ;
+    height: 266.5px;
+  }
   
   .portfolio .portfolio-wrap .portfolio-links a {
     color: #fff;
