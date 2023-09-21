@@ -10161,6 +10161,11 @@ section.resume-section .resume-section-content {
   font-size: 90px;
 }
 
+.resume-section-content h1 span {
+  padding-left: 4px;
+   
+ }
+
 @media (max-width: 501px) {
   .resume-section-content h1 {
     flex-direction: column; /* Stack elements vertically */
