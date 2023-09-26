@@ -156,9 +156,9 @@ function scrollToTopSmoothly() {
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 120,
+      typeSpeed: 100,
       backSpeed: 60,
-      backDelay: 3000,
+      backDelay: 2300,
       
     });
   }
